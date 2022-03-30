@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">
+            <h1 id="title">Devs Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <div class="form-content">
+            <form id="survey-form" action="#" method="get">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="user_name" id="name" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="user_email" id="email" required placeholder="Enter your Email">
+                </div>
+
+                <div class="form-group">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input type="number" name="user_age" id="number" required min="12" max="100" placeholder="Enter your Age">
+                </div>
+
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select name="user_role" id="dropdown" required>
+                      <option selected>Select current role</option>
+                      <option value="student">Student</option>
+                      <option value="full-time-job">Full Time Job</option>  
+                      <option value="prefer-not-to-say">Prefer not to say</option>  
+                      <option value="other">Other</option>  
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend Devs to a friend?</p>
+                    <label><input type="radio" name="user_recommend" value="Definitely" > Definitely</label>
+                    <label><input type="radio" name="user_recommend" value="Maybe" > Maybe</label>
+                    <label><input type="radio" name="user_recommend" value="Not sure" > Not sure</label>
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite feature of Devs?</p>
+                    <label><input type="checkbox" name="user_improved" value="Front-end-Projects"> Front-end Projects</label>
+                    <label><input type="checkbox" name="user_improved" value="Back-end-Projects"> Back-end Projects</label>
+                    <label><input type="checkbox" name="user_improved" value="Data-Visualization"> Data Visualization</label>
+                    <label><input type="checkbox" name="user_improved" value="Challenges"> Challenges</label>
+                </div>
+
+                <div class="form-group">
+                    <p class="suggest-text">Any comments or suggestions?</p>
+                    <textarea name="user_msj" id="textarea" placeholder="Enter your comment here.."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
